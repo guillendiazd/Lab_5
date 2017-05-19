@@ -10,9 +10,10 @@ public class Proyecto {
 
     public Proyecto() {
     }
-    
-    public Proyecto(String nombre, int commit) {
+    public Proyecto(String nombre) {
         this.nombre = nombre;
+    }
+    public Proyecto(int commit) {
         this.commit = commit;
     }
 
