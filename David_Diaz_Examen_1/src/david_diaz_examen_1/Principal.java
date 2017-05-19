@@ -1,4 +1,11 @@
 package david_diaz_examen_1;
+
+import java.util.ArrayList;
+import java.util.Date;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 public class Principal extends javax.swing.JFrame {
 
     /**
@@ -17,21 +24,515 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jP_Usuario = new javax.swing.JPanel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jP_Usuario_Agregar = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jT_Usuario_Nombre = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jT_Usuario_Edad = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jT_Usuario_Profesion = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jT_Usuario_Username = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jT_Usuario_Password = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jCB_Usuario_Modificar = new javax.swing.JComboBox();
+        jLabel7 = new javax.swing.JLabel();
+        jT_Usuario_Modificar_Nombre = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jT_Usuario_Modificar_Edad = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jT_Usuario_Modificar_Profesion = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jT_Usuario_Modificar_Username = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jT_Usuario_Modificar_Password = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jCB_Usuario_Eliminar = new javax.swing.JComboBox<>();
+        jButton3 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jT_Listar = new javax.swing.JTable();
+        jButton4 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jT_Usuario_Login_Password = new javax.swing.JTextField();
+        jT_Usuario_Login_Username = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("Nombre :");
+
+        jLabel2.setText("Edad :");
+
+        jT_Usuario_Edad.setText("\n");
+
+        jLabel3.setText("Profesión :");
+
+        jLabel4.setText("Username :");
+
+        jLabel5.setText("Password :");
+
+        jButton1.setText("Guardar");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jP_Usuario_AgregarLayout = new javax.swing.GroupLayout(jP_Usuario_Agregar);
+        jP_Usuario_Agregar.setLayout(jP_Usuario_AgregarLayout);
+        jP_Usuario_AgregarLayout.setHorizontalGroup(
+            jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jP_Usuario_AgregarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jP_Usuario_AgregarLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jP_Usuario_AgregarLayout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Password))
+                            .addGroup(jP_Usuario_AgregarLayout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Username))
+                            .addGroup(jP_Usuario_AgregarLayout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Profesion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jP_Usuario_AgregarLayout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jT_Usuario_Nombre))
+                        .addGap(0, 233, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jP_Usuario_AgregarLayout.setVerticalGroup(
+            jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jP_Usuario_AgregarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jT_Usuario_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jT_Usuario_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jT_Usuario_Profesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jT_Usuario_Username, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jP_Usuario_AgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jT_Usuario_Password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(128, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Agregar", jP_Usuario_Agregar);
+
+        jLabel6.setText("Usuario :");
+
+        jLabel7.setText("Nombre :");
+
+        jLabel8.setText("Edad :");
+
+        jT_Usuario_Modificar_Edad.setText("\n");
+
+        jLabel9.setText("Profesión :");
+
+        jLabel10.setText("Username :");
+
+        jLabel11.setText("Password :");
+
+        jButton2.setText("Guardar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Modificar_Username))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Modificar_Profesion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Modificar_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jT_Usuario_Modificar_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jT_Usuario_Modificar_Password))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCB_Usuario_Modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(194, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jCB_Usuario_Modificar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jT_Usuario_Modificar_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jT_Usuario_Modificar_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jT_Usuario_Modificar_Profesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jT_Usuario_Modificar_Username, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(jT_Usuario_Modificar_Password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(84, 84, 84))
+        );
+
+        jTabbedPane2.addTab("Modificar", jPanel2);
+
+        jLabel12.setText("Usuario :");
+
+        jButton3.setText("Eliminar");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCB_Usuario_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jCB_Usuario_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(216, 216, 216)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(103, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Eliminar", jPanel3);
+
+        jT_Listar.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Edad", "Profesión", "Username"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jT_Listar);
+
+        jButton4.setText("Listar");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(92, 92, 92))
+        );
+
+        jTabbedPane2.addTab("Listar", jPanel4);
+
+        jLabel13.setText("Username :");
+
+        jLabel14.setText(" Password :");
+
+        jButton5.setText("Login");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jT_Usuario_Login_Password, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
+                        .addComponent(jT_Usuario_Login_Username)))
+                .addContainerGap(112, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jT_Usuario_Login_Username, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jT_Usuario_Login_Password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(71, 71, 71)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Login", jPanel5);
+
+        javax.swing.GroupLayout jP_UsuarioLayout = new javax.swing.GroupLayout(jP_Usuario);
+        jP_Usuario.setLayout(jP_UsuarioLayout);
+        jP_UsuarioLayout.setHorizontalGroup(
+            jP_UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jP_UsuarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+        jP_UsuarioLayout.setVerticalGroup(
+            jP_UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jP_UsuarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Usuario", jP_Usuario);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane1)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane1)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        String nombre, profesion, username, password;
+        int edad;
+        try {
+            nombre = jT_Usuario_Nombre.getText();
+            edad = Integer.parseInt(jT_Usuario_Edad.getText());
+            profesion = jT_Usuario_Profesion.getText();
+            username = jT_Usuario_Username.getText();
+            password = jT_Usuario_Password.getText();
+                Usuario x = new Usuario(nombre, edad, profesion, username, password);
+                usuarios.add(x);
+                DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Usuario_Modificar.getModel();
+                modelo.addElement(x);
+                jCB_Usuario_Modificar.setModel(modelo);
+                DefaultComboBoxModel modelo_2 = (DefaultComboBoxModel) jCB_Usuario_Eliminar.getModel();
+                modelo_2.addElement(x);
+                jCB_Usuario_Eliminar.setModel(modelo_2);
+                JOptionPane.showMessageDialog(this, "Amigo agregado Exitosamente");
+                jT_Usuario_Nombre.setText("");
+                jT_Usuario_Edad.setText("");
+                jT_Usuario_Profesion.setText("");
+                jT_Usuario_Username.setText("");
+                jT_Usuario_Password.setText("");
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Ocurrio un error y no se guardaron los datos");
+            jT_Usuario_Nombre.setText("");
+            jT_Usuario_Edad.setText("");
+            jT_Usuario_Profesion.setText("");
+            jT_Usuario_Username.setText("");
+            jT_Usuario_Password.setText("");
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        String nombre, profesion, username, password;
+        int edad;
+        System.out.println(usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()));
+        nombre = jT_Usuario_Modificar_Nombre.getText();
+        edad = Integer.parseInt(jT_Usuario_Modificar_Edad.getText());
+        profesion = jT_Usuario_Modificar_Profesion.getText();
+        username = jT_Usuario_Modificar_Username.getText();
+        password = jT_Usuario_Modificar_Password.getText();
+        if (nombre.equals(" ")) {
+            nombre = usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()).getNombre();
+        }else if (edad == 0) {
+            edad = usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()).getEdad();
+        }else if (profesion.equals(" ")) {
+            profesion = usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()).getProfesion();
+        }else if (username.equals(" ")) {
+            username = usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()).getUsername();
+        }else if (password.equals(" ")) {
+            password = usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()).getPassword();
+        }
+        Usuario x = new Usuario(nombre, edad, profesion, username, password);
+        usuarios.set(jCB_Usuario_Modificar.getSelectedIndex(), x);
+        System.out.println(usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()));
+        jCB_Usuario_Modificar.addItem(usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()));
+        jCB_Usuario_Modificar.removeItemAt(jCB_Usuario_Modificar.getSelectedIndex());
+        JOptionPane.showMessageDialog(this, "Amigo Modificado Exitosamente");
+        jT_Usuario_Modificar_Nombre.setText("");
+        jT_Usuario_Modificar_Edad.setText("");
+        jT_Usuario_Modificar_Profesion.setText("");
+        jT_Usuario_Modificar_Profesion.setText("");
+        jT_Usuario_Modificar_Password.setText("");
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        usuarios.remove(jCB_Usuario_Eliminar.getSelectedIndex());
+        for (int i = 0; i < jCB_Usuario_Modificar.getItemCount(); i++) {
+            jCB_Usuario_Modificar.removeItemAt(i);
+        }
+        for (int i = 0; i < usuarios.size(); i++) {
+            jCB_Usuario_Modificar.addItem(usuarios.get(i));
+        }
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        jT_Listar.removeAll();
+        for (int i = 0; i <usuarios.size(); i++) {
+            Object[] newrow = {
+                usuarios.get(i).getNombre(),
+                usuarios.get(i).getEdad(),
+                usuarios.get(i).getProfesion(),
+                usuarios.get(i).getUsername(),
+            };
+            DefaultTableModel modelo = (DefaultTableModel) jT_Listar.getModel();
+            modelo.addRow(newrow);
+            jT_Listar.setModel(modelo);
+        }
+        
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        System.out.println("entro");
+        if (Verificar_U() == true || Verificar_P() == true) {
+            System.out.println("Entro_2");
+            if (Verificar_C() == true) {
+                System.out.println("Entro_3");
+                JOptionPane.showMessageDialog(this, "Login Exitoso");
+            }else{
+                JOptionPane.showMessageDialog(this, "Usuario y/o Password Incorrectas");
+            }
+        }
+    }//GEN-LAST:event_jButton5MouseClicked
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -65,5 +566,81 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JComboBox<Object> jCB_Usuario_Eliminar;
+    private javax.swing.JComboBox jCB_Usuario_Modificar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jP_Usuario;
+    private javax.swing.JPanel jP_Usuario_Agregar;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jT_Listar;
+    private javax.swing.JTextField jT_Usuario_Edad;
+    private javax.swing.JTextField jT_Usuario_Login_Password;
+    private javax.swing.JTextField jT_Usuario_Login_Username;
+    private javax.swing.JTextField jT_Usuario_Modificar_Edad;
+    private javax.swing.JTextField jT_Usuario_Modificar_Nombre;
+    private javax.swing.JTextField jT_Usuario_Modificar_Password;
+    private javax.swing.JTextField jT_Usuario_Modificar_Profesion;
+    private javax.swing.JTextField jT_Usuario_Modificar_Username;
+    private javax.swing.JTextField jT_Usuario_Nombre;
+    private javax.swing.JTextField jT_Usuario_Password;
+    private javax.swing.JTextField jT_Usuario_Profesion;
+    private javax.swing.JTextField jT_Usuario_Username;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
     // End of variables declaration//GEN-END:variables
+    private ArrayList<Usuario> usuarios = new ArrayList();
+    public boolean Verificar_U(){
+        System.out.println("Entro_4");
+        boolean v = false;
+        for (int i = 0; i < usuarios.size(); i++) {
+            System.out.println("Entro_5");
+            System.out.println(usuarios.get(i).getUsername()+" ");
+            if (usuarios.get(i).getUsername().equals(jT_Usuario_Login_Username.getText())) {
+                v = true;
+            }
+        }
+        return v;
+    }
+    public boolean Verificar_P(){
+        boolean v = false;
+        for (int i = 0; i < usuarios.size(); i++) {
+            if (usuarios.get(i).getPassword().equals(jT_Usuario_Login_Password.getText())) {
+                
+                v = true;
+            }
+        }
+        return v;
+    }
+    public boolean Verificar_C(){
+        boolean v = false;
+        for (int i = 0; i < usuarios.size(); i++) {
+            if ( usuarios.get(i).getUsername().equals(jT_Usuario_Login_Username.getText()) && usuarios.get(i).getPassword().equals(jT_Usuario_Login_Password.getText())) {
+                v = true;
+            }
+        }
+        return v;
+    }
 }
