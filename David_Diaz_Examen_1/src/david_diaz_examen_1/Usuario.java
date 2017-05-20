@@ -1,10 +1,14 @@
 package david_diaz_examen_1;
+
+import java.util.ArrayList;
+
 public class Usuario {  
     private String nombre;
     private int edad;
     private String profesion;
     private String username;
     private String password;
+    private ArrayList<Proyecto> proyectos = new ArrayList();
 
     public Usuario() {
     }
@@ -55,6 +59,14 @@ public class Usuario {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public ArrayList<Proyecto> getProyectos() {
+        return proyectos;
+    }
+
+    public void setProyectos(ArrayList<Proyecto> proyectos) {
+        this.proyectos = proyectos;
     }
 
     @Override

@@ -22,7 +22,7 @@ public class Carpeta extends Archivo{
     
     @Override
     public String toString() {
-        return "Carpeta " + super.toString();
+        return super.toString();
     }
     
 }

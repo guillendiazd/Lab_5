@@ -104,7 +104,24 @@ public class Principal extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jT_Texto_C = new javax.swing.JTextArea();
+        jLabel27 = new javax.swing.JLabel();
+        jCB_Archivo_Crear = new javax.swing.JComboBox<>();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jCB_Archivo_Modificar = new javax.swing.JComboBox<>();
+        jLabel26 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jButton13 = new javax.swing.JButton();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        jCB_Archivo_Eliminar = new javax.swing.JComboBox<>();
+        jButton14 = new javax.swing.JButton();
+        jPanel16 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jCB_Proyecto_Eliminar = new javax.swing.JComboBox<>();
+        jButton12 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -537,6 +554,7 @@ public class Principal extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Crear", jPanel7);
 
+        jTA_Archivos.setEditable(false);
         jTA_Archivos.setColumns(20);
         jTA_Archivos.setRows(5);
         jScrollPane3.setViewportView(jTA_Archivos);
@@ -603,46 +621,55 @@ public class Principal extends javax.swing.JFrame {
         jT_Texto_C.setRows(5);
         jScrollPane4.setViewportView(jT_Texto_C);
 
+        jLabel27.setText("Proyecto :");
+
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(jLabel18))
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel19)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jT_Carpeta_N, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel20)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jT_Carpeta_T, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel27)
+                    .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel13Layout.createSequentialGroup()
+                            .addGap(75, 75, 75)
+                            .addComponent(jLabel18))
+                        .addGroup(jPanel13Layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jLabel19)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jT_Carpeta_N, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel13Layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jLabel20)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jT_Carpeta_T, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel13Layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel13Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel21)
                         .addGap(81, 81, 81))
                     .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel13Layout.createSequentialGroup()
-                                .addComponent(jLabel22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jT_Texto_N, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(47, 47, 47)
+                                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel13Layout.createSequentialGroup()
+                                        .addComponent(jLabel22)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jT_Texto_N, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel13Layout.createSequentialGroup()
+                                        .addComponent(jLabel23)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jT_Texto_T, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane4)))
                             .addGroup(jPanel13Layout.createSequentialGroup()
-                                .addComponent(jLabel23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jT_Texto_T, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane4))
+                                .addGap(2, 2, 2)
+                                .addComponent(jCB_Archivo_Crear, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(55, Short.MAX_VALUE))))
         );
         jPanel13Layout.setVerticalGroup(
@@ -673,15 +700,125 @@ public class Principal extends javax.swing.JFrame {
                                     .addComponent(jLabel23)))
                             .addComponent(jLabel22))
                         .addGap(18, 18, 18)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton11)
                     .addComponent(jButton10))
-                .addGap(133, 133, 133))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(jCB_Archivo_Crear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(96, 96, 96))
         );
 
         jTabbedPane4.addTab("Crear Archivos", jPanel13);
+
+        jLabel25.setText("Archivos :");
+
+        jCB_Archivo_Modificar.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jCB_Archivo_ModificarItemStateChanged(evt);
+            }
+        });
+
+        jLabel26.setText("Texto :");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane5.setViewportView(jTextArea1);
+
+        jButton13.setText("Guardar");
+        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton13MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGap(99, 99, 99)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel26)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jCB_Archivo_Modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                            .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(124, Short.MAX_VALUE))
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(jCB_Archivo_Modificar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(55, 55, 55)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel26)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addComponent(jButton13)
+                .addContainerGap(135, Short.MAX_VALUE))
+        );
+
+        jTabbedPane4.addTab("Modificar Archivo", jPanel14);
+
+        jLabel28.setText("Archivos :");
+
+        jButton14.setText("Eliminar");
+        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton14MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(194, 194, 194)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addComponent(jLabel28)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCB_Archivo_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(76, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(jCB_Archivo_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(102, 102, 102)
+                .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
+
+        jTabbedPane4.addTab("Eliminar Archivo", jPanel15);
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 466, Short.MAX_VALUE)
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 399, Short.MAX_VALUE)
+        );
+
+        jTabbedPane4.addTab("Comando", jPanel16);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -702,15 +839,39 @@ public class Principal extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Modificar", jPanel8);
 
+        jLabel24.setText("Proyecto :");
+
+        jButton12.setText("Eliminar");
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(115, 115, 115)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addComponent(jLabel24)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCB_Proyecto_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(183, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jCB_Proyecto_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(133, 133, 133)
+                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(200, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Eliminar", jPanel9);
@@ -837,9 +998,15 @@ public class Principal extends javax.swing.JFrame {
         }
         Usuario x = new Usuario(nombre, edad, profesion, username, password);
         usuarios.set(jCB_Usuario_Modificar.getSelectedIndex(), x);
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Usuario_Modificar.getModel();
+        modelo.removeElementAt(jCB_Usuario_Modificar.getSelectedIndex());
+        modelo.addElement(x);
+        jCB_Usuario_Modificar.setModel(modelo);
+        DefaultComboBoxModel modelo_2 = (DefaultComboBoxModel) jCB_Usuario_Eliminar.getModel();
+        modelo_2.removeElementAt(jCB_Usuario_Modificar.getSelectedIndex());
+        modelo_2.addElement(x);
+        jCB_Usuario_Eliminar.setModel(modelo_2);
         System.out.println(usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()));
-        jCB_Usuario_Modificar.addItem(usuarios.get(jCB_Usuario_Modificar.getSelectedIndex()));
-        jCB_Usuario_Modificar.removeItemAt(jCB_Usuario_Modificar.getSelectedIndex());
         JOptionPane.showMessageDialog(this, "Amigo Modificado Exitosamente");
         jT_Usuario_Modificar_Nombre.setText("");
         jT_Usuario_Modificar_Edad.setText("");
@@ -850,12 +1017,9 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         usuarios.remove(jCB_Usuario_Eliminar.getSelectedIndex());
-        for (int i = 0; i < jCB_Usuario_Modificar.getItemCount(); i++) {
-            jCB_Usuario_Modificar.removeItemAt(i);
-        }
-        for (int i = 0; i < usuarios.size(); i++) {
-            jCB_Usuario_Modificar.addItem(usuarios.get(i));
-        }
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Usuario_Eliminar.getModel();
+        modelo.removeElementAt(jCB_Usuario_Modificar.getSelectedIndex());
+        jCB_Usuario_Modificar.setModel(modelo);
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
@@ -899,6 +1063,12 @@ public class Principal extends javax.swing.JFrame {
         DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Proyecto.getModel();
         modelo.addElement(x);
         jCB_Proyecto.setModel(modelo);
+        DefaultComboBoxModel modelo_2 = (DefaultComboBoxModel) jCB_Proyecto_Eliminar.getModel();
+        modelo_2.addElement(x);
+        jCB_Proyecto_Eliminar.setModel(modelo_2);
+        DefaultComboBoxModel modelo_4 = (DefaultComboBoxModel) jCB_Archivo_Crear.getModel();
+        modelo_4.addElement(x);
+        jCB_Archivo_Crear.setModel(modelo_4);
         JOptionPane.showMessageDialog(this, "Proyecto Creado Exitosamente");
         jT_Proyecto_Nombre.setText("");
     }//GEN-LAST:event_jButton6MouseClicked
@@ -922,6 +1092,13 @@ public class Principal extends javax.swing.JFrame {
         tamanio = Integer.parseInt(jT_Carpeta_T.getText());
         Carpeta x = new Carpeta(nombre, tamanio);
         archivos.add(x);
+        proyectos.get(jCB_Archivo_Crear.getSelectedIndex()).getArchivos().add(archivos.get(jCB_Archivo_Crear.getSelectedIndex()));
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Archivo_Modificar.getModel();
+        modelo.addElement(x);
+        jCB_Archivo_Modificar.setModel(modelo);
+        DefaultComboBoxModel modelo_2 = (DefaultComboBoxModel) jCB_Archivo_Eliminar.getModel();
+        modelo_2.addElement(x);
+        jCB_Archivo_Crear.setModel(modelo_2);
         JOptionPane.showMessageDialog(this, "Carpeta Creada Exitosamente");
         jT_Carpeta_N.setText("");
         jT_Carpeta_T.setText("");
@@ -936,11 +1113,53 @@ public class Principal extends javax.swing.JFrame {
         contenido = jT_Texto_C.getText();
         Archivo_Texto x = new Archivo_Texto(contenido, nombre, tamanio);
         archivos.add(x);
+        proyectos.get(jCB_Archivo_Crear.getSelectedIndex()).getArchivos().add(archivos.get(jCB_Archivo_Crear.getSelectedIndex()));
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Archivo_Modificar.getModel();
+        modelo.addElement(x);
+        jCB_Archivo_Modificar.setModel(modelo);
+        DefaultComboBoxModel modelo_2 = (DefaultComboBoxModel) jCB_Archivo_Eliminar.getModel();
+        modelo_2.addElement(x);
+        jCB_Archivo_Crear.setModel(modelo_2);
         JOptionPane.showMessageDialog(this, "Archivo de Texto Creado Exitosamente");
         jT_Texto_N.setText("");
         jT_Texto_T.setText("");
         jT_Texto_C.setText("");
     }//GEN-LAST:event_jButton11MouseClicked
+
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
+        proyectos.remove(jCB_Usuario_Eliminar.getSelectedIndex());
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Proyecto_Eliminar.getModel();
+        modelo.removeElementAt(jCB_Usuario_Modificar.getSelectedIndex());
+        jCB_Proyecto_Eliminar.setModel(modelo);
+    }//GEN-LAST:event_jButton12MouseClicked
+
+    private void jCB_Archivo_ModificarItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jCB_Archivo_ModificarItemStateChanged
+       /*
+        if (archivos.get(jCB_Archivo_Modificar.getSelectedIndex()) instanceof Carpeta) {
+            ((Carpeta)archivos.get(jCB_Archivo_Modificar.getSelectedIndex())).getArchivos();
+        }
+        */
+    }//GEN-LAST:event_jCB_Archivo_ModificarItemStateChanged
+
+    private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
+        if (archivos.get(jCB_Archivo_Modificar.getSelectedIndex()) instanceof Archivo_Texto) {
+            String contenido = jT_Texto_C.getText();
+            ((Archivo_Texto)archivos.get(jCB_Archivo_Modificar.getSelectedIndex())).setContenido(contenido);
+            JOptionPane.showMessageDialog(this, "Archivo de Texto Modificado Exitosamente");
+            jT_Texto_N.setText("");
+        } else {
+            JOptionPane.showMessageDialog(this, "Solo Archivos de Texto se puede modificar");
+        }
+    }//GEN-LAST:event_jButton13MouseClicked
+
+    private void jButton14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MouseClicked
+        archivos.remove(jCB_Archivo_Eliminar.getSelectedIndex());
+        proyectos.get(jCB_Archivo_Eliminar.getSelectedIndex()).getArchivos().remove(jCB_Archivo_Eliminar.getSelectedIndex());
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Archivo_Eliminar.getModel();
+        modelo.removeElementAt(jCB_Archivo_Eliminar.getSelectedIndex());
+        jCB_Archivo_Eliminar.setModel(modelo);
+        jCB_Archivo_Modificar.setModel(modelo);
+    }//GEN-LAST:event_jButton14MouseClicked
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -977,6 +1196,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -985,8 +1207,12 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jCB_Archivo_Crear;
+    private javax.swing.JComboBox<String> jCB_Archivo_Eliminar;
+    private javax.swing.JComboBox<String> jCB_Archivo_Modificar;
     private javax.swing.JComboBox<String> jCB_Colaboradores;
     private javax.swing.JComboBox<String> jCB_Proyecto;
+    private javax.swing.JComboBox<String> jCB_Proyecto_Eliminar;
     private javax.swing.JComboBox<Object> jCB_Usuario_Eliminar;
     private javax.swing.JComboBox jCB_Usuario_Modificar;
     private javax.swing.JLabel jLabel1;
@@ -1005,6 +1231,11 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1019,6 +1250,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1031,6 +1265,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTextArea jTA_Archivos;
     private javax.swing.JTextArea jTA_Listar;
     private javax.swing.JTextField jT_Carpeta_N;
@@ -1056,6 +1291,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTabbedPane jTabbedPane4;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
     private ArrayList<Usuario> usuarios = new ArrayList();
     private ArrayList<Proyecto> proyectos = new ArrayList();
